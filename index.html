@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penerima</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/buton.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+      body {
+  background-image: url("how-to-create-the-matrix-rain-in-command-prompt.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 700px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+      }
+    </style>
+</head>
+<body >
+
+  <div class="w3-panel w3-card">
+    <p>
+      <video id="localVideo"   autoplay muted style="display: none;"></video>
+      <video id="remoteVideo"  autoplay  muted   poster="img/favo.png"  style="width: 320px;height: 240px;"></video>
+      </p>
+      <p id="wrtc">komunikasi</p>
+  </div>
+  <div class="w3-panel w3-card-4">  
+        <p>
+          <button class="button button1" onclick=" on_lampu()"><span class="	glyphicon glyphicon-lamp"></span>Lampu</button>
+          <button class="button button3" onclick=" off_lampu()"><span class="glyphicon glyphicon-off"></span></button>
+        <p>
+          <button class="button button2" onclick="on_air()"><span class="glyphicon glyphicon-tint"></span> Siram</button>
+          <button class="button button3"onclick="off_air()"><span class="glyphicon glyphicon-off"></span></button>
+        </p>
+</div>
+<script  src="wrtc/scale.min.js"></script>
+<script src="wrtc/wrtc.js"></script>
+<script src="libfirejeq/jquery.min.js"></script>
+<script src="libfirejeq/firebase.js"></script>
+<script src="libfirejeq/cloud.js"></script>
+
+</body>
+</html>
+
+
+
+
